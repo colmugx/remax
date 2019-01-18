@@ -11,7 +11,7 @@ const camelCased = (_str: string) => {
 
 const styleString = (style: CSSProperties) => (
   Object.entries(style).reduce((styleString, [propName, propValue]) => {
-    return `${styleString}${propName}:${propValue}`;
+    return `${styleString}${propName}:${propValue};`;
   }, '')
 );
 
